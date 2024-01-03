@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+    /* navbar */
+    .navbar-brand{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+}
+.collapse{
+    width: 85%;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.collapse ul li a {
+    /* position: relative; */
+    text-decoration: none;
+}
+.collapse li a:hover::after {
+    content: "";
+    /* position: absolute; */
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+}
+.collapse ul li::after {
+    content: '';
+    height: 2.5px;
+    width: 0;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transition: 0.8s;
+    border-radius: 6px;
+}
+.collapse ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.collapse ul li:hover::after {
+    width: 100%;
+}
+    /* end navbar */
+    /* About us Css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+span {
+    color: orange;
+}
+.container {
+    width: 100%;
+     /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */ 
+}
+.heading h2{
+    font-family: Lucida Handwriting;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 60px;
+    
+}
+#pera{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: serif;
+    line-height: 24px;
+    /* line-break: anywhere; */
+    padding-left: 50px;
+    /* border: 4px solid gray; */
+    box-shadow: 0px 5px 20px gray;
+    padding-right: 50px;
+    margin-left: 130px;
+    width: 80%;
+}
+/* End About Us */
+
+/* footer */
+.links a{
+    text-decoration: none;
+}
+.contact{
+    margin-left: 16px;
+}
+
+.icons-container .icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem 3rem;
+}
+.icons-container .icons .bi{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+footer{
+    margin-top: 50px;
+}
+@media (max-width: 500px){
+    #pera{
+      margin: 10px;
+      margin-left: 70px;
+    }
+    .heading h2{
+      font-size: 42px;
+      padding-bottom: 20px;
+    }
+    .collapse{
+      width: auto;
+    }
+}
+/* end footer */
+
+</style>
+    
+</head>
+<body>
+ <!-- /* <---------------------------------------------------- Start Navbar ------------------------------------------------->
+ <nav class="navbar navbar-expand-lg bg-dark text-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Vineger's Food <br> <span>Restaurant</span></a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="http://127.0.0.1:5501/index.html">About</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown text-white">
+            <a class="nav-link bg-dark text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Meals
+              <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor"
+                class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--secondary-icon);">
+                <path
+                  d="M10 14a1 1 0 0 1-.755-.349L5.329 9.182a1.367 1.367 0 0 1-.205-1.46A1.184 1.184 0 0 1 6.2 7h7.6a1.18 1.18 0 0 1 1.074.721 1.357 1.357 0 0 1-.2 1.457l-3.918 4.473A1 1 0 0 1 10 14z">
+                </path>
+              </svg>
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item bg-dark text-white" href="regular.html">Regular</a></li>
+              <li><a class="dropdown-item bg-dark text-white" href="lunch.html">Lunch</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item bg-dark text-white" href="snak.html">Snack</a></li>
+              <li><a class="dropdown-item bg-dark text-white" href="desert.html">Deserts</a></li>
+              <li><a class="dropdown-item bg-dark text-white" href="beverage.html">Beverages</a></li>
+            </ul>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="awards.html">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Cattering.html">Catering</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="recipe.html">Recipe of the month</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="feddback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- <---------------------------------------------------- End Navbar ------------------------------------------------->
+
+<!-- about us -->
+<div class="container">
+        <div class="heading">
+            <h2 data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">About our<span> Restaurant</span></h2>
+      </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-6">
+            <p data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" id="pera">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum accusamus pariatur dignissimos
+                consequatur hic consequuntur. Maxime consequuntur asperiores aperiam, debitis nisi similique id,
+                voluptatem magnam tempora exercitationem, numquam porro vitae!
+                Unde molestiae ad, quos saepe ex, sed provident ut in omnis magnam illo. Veniam laborum illo id, dicta
+                facere esse architecto iste quis accusamus sunt aspernatur sed unde ex? Molestias?
+                Illo, veniam! Vitae deserunt velit molestiae excepturi laborum inventore illum esse culpa perspiciatis
+                soluta eveniet voluptatibus corrupti earum reprehenderit nemo aliquam similique repellendus alias, in
+                consequuntur veritatis accusantium dolorum? Quo!
+                Quaerat reiciendis sapiente quasi obcaecati illo ex? Delectus quaerat aliquam enim odio similique
+                repellat, expedita eveniet sint explicabo, minima est ipsa a minus voluptates adipisci sit totam
+                possimus quas commodi?
+                Sapiente doloremque quae, obcaecati porro nesciunt minima repudiandae commodi voluptate sunt ducimus eos
+                voluptas omnis magnam doloribus excepturi perferendis quisquam quaerat voluptatem harum ipsum. Quae
+                eaque saepe expedita beatae ipsum!</p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block" data-aos="fade-up"
+      data-aos-duration="3000">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-white" data-aos="fade-up"
+            data-aos-duration="3000">
+              <i class="fas fa-gem me-3"></i>Vineger's Food <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restaurant</span>
+            </h6>
+            <p style="color: white;" data-aos="fade-right" data-aos-duration="3000">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, aspernatur aut. Dignissimos excepturi
+              corporis alias laudantium unde cupiditate minima atque, sunt consectetur voluptas a at libero eveniet sit
+              porro laborum?
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class=" links col-lg-2 col-xl-2 mx-auto mb-4 text-white"data-aos="fade-right" data-aos-duration="3000">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;" data-aos="fade-up"
+            data-aos-duration="3000">
+              Product'<span>s</span>
+            </h6>
+            <p>
+              <a href="regular.html" class="text-reset">Regular</a>
+            </p>
+            <p>
+              <a href="lunch.html" class="text-reset">Lunch</a>
+            </p>
+            <p>
+              <a href="snak.html" class="text-reset">Snack</a>
+            </p>
+            <p>
+              <a href="desert.html" class="text-reset">Deserts</a>
+            </p>
+            <p>
+              <a href="beverage.html" class="text-reset">Beverages</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-white"data-aos="fade-right" data-aos-duration="3000">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;" data-aos="fade-up"
+            data-aos-duration="3000">
+              Useful <span>links</span>
+            </h6>
+            <p>
+              <a href="" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="about.html" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="awards.html" class="text-reset">Awards</a>
+            </p>
+            <p>
+              <a href="contact.html" class="text-reset">Contact</a>
+            </p>
+            <p>
+              <a href="feddback.html" class="text-reset">Feedback</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-white"data-aos="fade-right" data-aos-duration="3000">
+            <!-- Links -->
+            <h6 class="contact text-uppercase fw-bold mb-4" style="color: white;" data-aos="fade-up"
+            data-aos-duration="3000">Contact <span>US</span></h6>
+            <p><i class="bi bi-house me-3"></i>A-151، near Admore Petrol &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pump،
+              &nbsp;&nbsp;&nbsp; Latifabad Unit 2 Block &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              C Hyderabad,
+              Sindh 71000</p>
+            <p>
+              <i class="bi bi-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="bi bi-phone me-3"></i> +92 341 8302004</p>
+            <p><i class="bi bi-phone me-3"></i> +92 342 2516211</p>
+
+          <!-- Grid column -->
+        <!-- Grid row -->
+      </div>
+           
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-4" style="background-color: rgba(0, 0, 0, 0.05);" data-aos="fade-up"
+    data-aos-duration="3000">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="http://127.0.0.1:5501/boostraps.html">VINEGERS FOOD RESTAURANT</a>
+      ALL RIGHTS RESERVED
+    </div>
+    <!-- Copyright -->
+    <!-- icons -->
+    <div class="col-md-5 col-lg-4">
+      <div class="text-center text-md-right">
+        <ul class="list-unstyled list-inline d-flex p-2"  style="margin-left: 500px;">
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i  class="bi bi-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <!-- end icons -->
+  </section>
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+<!-- <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(); -->
+</script>
+</body>
+</html>

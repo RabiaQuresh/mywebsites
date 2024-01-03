@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vineger's Food Restaurant</title>
+  <!-- links -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- end links -->
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark text-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Vineger's Food <br> <span>Restaurant</span></a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+          <li class="nav-item dropdown text-white">
+            <a class="nav-link bg-dark text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Meals
+              <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor"
+                class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--secondary-icon);">
+                <path
+                  d="M10 14a1 1 0 0 1-.755-.349L5.329 9.182a1.367 1.367 0 0 1-.205-1.46A1.184 1.184 0 0 1 6.2 7h7.6a1.18 1.18 0 0 1 1.074.721 1.357 1.357 0 0 1-.2 1.457l-3.918 4.473A1 1 0 0 1 10 14z">
+                </path>
+              </svg>
+            </a>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item bg-dark text-white" href="regular.html">Regular</a></li>
+              <li><a class="dropdown-item bg-dark text-white" href="lunch.html">Lunch</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item bg-dark text-white" href="snak.html">Snack</a></li>
+              <li><a class="dropdown-item bg-dark text-white" href="desert.html">Deserts</a></li>
+              <li><a class="dropdown-item bg-dark text-white" href="beverage.html">Beverages</a></li>
+            </ul>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="awards.html">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Cattering.html">Cattering</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="recipe.html">Recipe of the month</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="feddback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- bg slider -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item ci active">
+        <img src="bbb.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block" data-aos="fade-down" data-aos-duration="3000">
+          <h4>Welcome to our</h4>
+          <h3>Vineger's Food <span>Restaurant</span></h3>
+        </div>
+      </div>
+      <div class="carousel-item ci" data-aos="fade-down" data-aos-duration="3000">
+        <img src="bbn.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h2 >Our Quality <span>Food's</span></h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, distinctio temporibus consectetur
+            debitis, earum tempora sunt inventore ad assumenda dolor dicta ullam laborum atque, velit dolorum. Dolor
+            quod dolore veniam!</h5>
+        </div>
+      </div>
+      <div class="carousel-item ci" data-aos="fade-down" data-aos-duration="3000">
+        <img src="mm.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h2>Our <span>Services</span></h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, distinctio temporibus consectetur
+            debitis, earum tempora sunt inventore ad assumenda dolor dicta ullam laborum atque, velit dolorum. Dolor
+            quod dolore veniam!</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- end bg slider -->
+
+    <!-- about -->
+  <div class="about" id="about">
+    <div class="main">
+      <img src="asset/about-img/images.jpg" data-aos="zoom-out-right">
+      <div class="about-text">
+        <h2 data-aos="zoom-in-down">About <span>Us</span></h2>
+        <p  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nulla eos ut quo est earum
+          voluptatibus. Voluptate tempora est possimus perspiciatis quod non mollitia reprehenderit esse,
+          minima doloribus nobis ullam.
+          Magni sint non iste magnam ad repudiandae consectetur numquam nesciunt aliquam minus nostrum
+          necessitatibus, ex dolore, voluptas ipsum aperiam sequi deleniti. Sunt soluta tenetur minima,
+          pariatur cum cumque beatae est?
+          Culpa, nostrum enim ex nam expedita quod. Excepturi voluptates, dolor minus aliquid ab quod
+          accusamus quaerat blanditiis sed aspernatur similique assumenda, magni quidem doloremque
+          consequatur, quis ut neque quos quam.
+          Ut, quod minus dignissimos cumque incidunt voluptas expedita? Ab, distinctio. Ut sed consectetur
+          minus, nostrum nulla omnis iure! Voluptates reiciendis quos vero omnis nobis repellat magni.
+          Distinctio, sint. Quis, sint.</p>
+        <a href="about.html"><button data-aos="fade-right" class="button" type="button">READ MORE</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- end about -->
+
+  <!-- dish cards -->
+  <div class="container-head m-5">
+    <h2 class="cards-top" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        Our Trending <span>Foods</span>
+    </h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                    <div class="row my-5 text-center">
+                        <!-- slide 1 -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <img src="asset/dish cards_img/chicken.shashlik.jpg" class="card-img-top"
+                                    alt="..." height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chicken Shashlik</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Amount: 20$</li>
+                                </ul>
+                                <div class="card-body">
+                                    <button class="button">
+                                        <a href="#" class="card-link">Order now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 1 -->
+
+                        <!-- slide 2 -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <img src="asset/dish cards_img/im.jpg" class="card-img-top" alt="..." height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chinese Rice</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Amount: 20$</li>
+                                </ul>
+                                <div class="card-body">
+                                    <button class="button">
+                                        <a href="#" class="card-link">Order now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 2 -->
+
+                        <!-- slide 3 -->
+                        <div class=" col-md-4 col-sm-12">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <img src="asset/dish cards_img/rasted chiken.jpg" class="card-img-top"
+                                    alt="..." height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roasted Chicken</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Amount: 20$</li>
+                                </ul>
+                                <div class="card-body">
+                                    <button class="button">
+                                        <a href="#" class="card-link">Order now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 3 -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- end slider 1 -->
+
+            <!-- slider 2 -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row my-5 text-center">
+                        <!-- slide 4 -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <img src="asset/dish cards_img/chinese noodles.jpg" class="card-img-top"
+                                    alt="..." height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chinese Noodles</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Amount: 20$</li>
+                                </ul>
+                                <div class="card-body">
+                                    <button class="button">
+                                        <a href="#" class="card-link">Order now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 4 -->
+
+                        <!-- slide 5 -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <img src="asset/dish cards_img/spting roll.jpeg" class="card-img-top"
+                                    alt="..." height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spring Rolls</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Amount: 20$</li>
+                                </ul>
+                                <div class="card-body">
+                                    <button class="button">
+                                        <a href="#" class="card-link">Order now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 5 -->
+
+                        <!-- slide 6 -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="card mx-auto" style="width: 18rem;">
+                                <img src="asset/dish cards_img/Salmon+Dumplings-6.jpg" class="card-img-top"
+                                    alt="..." height="200px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dumplings</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Amount: 20$</li>
+                                </ul>
+                                <div class="card-body">
+                                    <button class="button">
+                                        <a href="#" class="card-link">Order now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end slide 6 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+  </div>
+  </div>
+        <!-- end slider 2 -->
+  <!-- end dish cards -->
+
+  
+          <div class="container">
+            <h1 class="reviews-top p-3 text-center" style="font-family: Lucida Handwriting;"  data-aos="flip-left" data-aos-duration="3000">What our client <span>Says</span></h1>
+            
+            <div class="row mx-auto my-5" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="Reviews">
+                        <img src="asset/rewiews_img/j.png" width="150px" class="rounded-circle mx-auto d-block my-3">
+                        <div class="Reviews-body">
+                            <p class="reviews-text text-center">
+                                This food has transformed the way I enjoy meals. The convenience of ordering my favorite dishes
+                                from local restaurants and having them delivered to the doorstep is simply fantastic.
+                            </p>
+                            <h3 class="reviews-name text-center">R. John</h3>
+                            <h6 class="text-center my-3">3 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="Reviews">
+                        <img src="asset/rewiews_img/vv.png" width="150px" class="rounded-circle mx-auto d-block my-3">
+                        <div class="Reviews-body">
+                            <p class="reviews-text text-center">
+                                This food has transformed the way I enjoy meals. The convenience of ordering my favorite dishes
+                                from local restaurants and having them delivered to the doorstep is simply fantastic.
+                            </p>
+                            <h3 class="reviews-name text-center">Thomas</h3>
+                            <h6 class="text-center my-3">3 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="Reviews">
+                        <img src="asset/rewiews_img/sa.png" width="150px" class="rounded-circle mx-auto d-block my-3">
+                        <div class="Reviews-body">
+                            <p class="reviews-text text-center pb-2">
+                                This food has transformed the way I enjoy meals. The convenience of ordering my favorite dishes
+                                from local restaurants and having them delivered to the doorstep is simply fantastic.
+                            </p>
+                            <h3 class="reviews-name text-center">James Jike</h3>
+                            <h6 class="text-center my-3">3 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- end rewiws -->
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block" data-aos="fade-up"
+      data-aos-duration="3000">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-white" data-aos="fade-up"
+            data-aos-duration="3000">
+              <i class="fas fa-gem me-3"></i>Vineger's Food <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restaurant</span>
+            </h6>
+            <p style="color: white;" data-aos="fade-right" data-aos-duration="3000">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, aspernatur aut. Dignissimos excepturi
+              corporis alias laudantium unde cupiditate minima atque, sunt consectetur voluptas a at libero eveniet sit
+              porro laborum?
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class=" links col-lg-2 col-xl-2 mx-auto mb-4 text-white" >
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;" data-aos="fade-up"
+            data-aos-duration="3000">
+              Product'<span>s</span>
+            </h6>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="regular.html" class="text-reset">Regular</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="lunch.html" class="text-reset">Lunch</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="snak.html" class="text-reset">Snack</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="desert.html" class="text-reset">Deserts</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="beverage.html" class="text-reset">Beverages</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="links col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="color: white;" data-aos="fade-up"
+            data-aos-duration="3000">
+              Useful <span>links</span>
+            </h6>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="" class="text-reset">Home</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="about.html" class="text-reset">About</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="awards.html" class="text-reset">Awards</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="contact.html" class="text-reset">Contact</a>
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <a href="feddback.html" class="text-reset">Feedback</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-white">
+            <!-- Links -->
+            <h6 class="contact text-uppercase fw-bold mb-4" style="color: white;" data-aos="fade-up"
+            data-aos-duration="3000">Contact <span>US</span></h6>
+            <p data-aos="fade-right" data-aos-duration="3000"><i class="bi bi-house me-3"></i>A-151، near Admore Petrol &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pump،
+              &nbsp;&nbsp;&nbsp; Latifabad Unit 2 Block &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              C Hyderabad,
+              Sindh 71000</p>
+            <p data-aos="fade-right" data-aos-duration="3000">
+              <i class="bi bi-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p data-aos="fade-right" data-aos-duration="3000"><i class="bi bi-phone me-3"></i> +92 341 8302004</p>
+            <p data-aos="fade-right" data-aos-duration="3000"><i class="bi bi-phone me-3"></i> +92 342 2516211</p>
+
+          <!-- Grid column -->
+        <!-- Grid row -->
+      </div>
+           
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-4" style="background-color: rgba(0, 0, 0, 0.05);"  data-aos="fade-up"
+    data-aos-duration="3000">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="http://127.0.0.1:5501/boostraps.html">VINEGERS FOOD RESTAURANT</a>
+      ALL RIGHTS RESERVED
+    </div>
+    <!-- Copyright -->
+    <!-- icons -->
+    <div class="col-md-5 col-lg-4">
+      <div class="text-center text-md-right">
+        <ul class="list-unstyled list-inline d-flex p-2 " style="margin-left: 500px;">
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-twitter"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="bi bi-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- end icons -->
+  </footer>
+  <!-- end Footer -->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

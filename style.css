@@ -1,0 +1,536 @@
+/* <---------------------------------------------------- Start Navbar -------------------------------------------------> */
+body {
+    overflow-y: hidden;
+}
+span{
+    color: orange;
+}
+.navbar-brand{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+}
+.collapse{
+    width: 85%;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.collapse ul li a {
+    /* position: relative; */
+    text-decoration: none;
+}
+.collapse li a:hover::after {
+    content: "";
+    /* position: absolute; */
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+}
+.collapse ul li::after {
+    content: '';
+    height: 2.5px;
+    width: 0;
+    background: orange;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    transition: 0.8s;
+    border-radius: 6px;
+}
+.collapse ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.collapse ul li:hover::after {
+    width: 100%;
+}
+/* <---------------------------------------------------- End Navbar -------------------------------------------------> */
+/* <---------------------------------------------------- Start Slider -------------------------------------------------> */
+.carousel-caption h2{
+    font-family: Lucida Handwriting;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+/* @media(max-width: 768px){
+    .carousel-caption h2{
+        font-size: 40px;
+        color: white;
+    }
+    .carousel-caption h5{
+        font-size: 0px;
+    }
+    .carousel-caption h3{
+        font-size: 10px;
+    }
+} */
+.carousel-caption h4{
+    font-family: Lucida Handwriting;
+    font-size: 50px;
+}
+.carousel-caption h3{
+    font-family: Lucida Handwriting;
+    font-size: 55px;
+    margin-bottom: 80px;
+}
+.carousel-caption h5{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.ci img{
+    height: 100vh;
+    /* overflow: hidden; */
+}
+/* <---------------------------------------------------- End Slider -------------------------------------------------> */
+/* <---------------------------------------------------- Start About -------------------------------------------------> */
+.about{
+    /* width: 100%; */
+    /* padding: 100px 0px; */
+    padding-top: 30px;
+    padding-bottom: 40px;
+    }
+    .about img{
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    }
+    .about-text{
+    width: 50%;
+    }
+    .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 85%;
+    }
+    .about-text h2{
+    margin-left: 110px;
+    font-size: 55px;
+    margin-bottom: 20px;
+    padding-top: 55px;
+    font-family: Lucida Handwriting;
+    }
+    .about-text p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 45px;
+    text-align: justify;
+    }
+    .about-text .button{
+    background-color: orange;
+    text-decoration: none;
+    /* border: 2px solid transparent; */
+    /* font-weight: bold; */
+    /* transition: 1s; */
+    color: white;
+    /* ///////////// */
+    text-transform: uppercase;
+    /* padding: 10px 30px; */
+    margin-top: 0;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid orange;
+    /* margin-left: 200px; */
+    box-shadow: 3px 3px 3px gray;
+    /* margin-bottom: 50px; */
+    font-size: 15px;
+    }
+    .about-text .button a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    }
+    .button a:hover{
+    /* background-color: transparent; */
+    /* border: 2px solid #f9004d; */
+    cursor: pointer;
+    color: white;
+    }      
+/* <---------------------------------------------------- End About -------------------------------------------------> */
+/* <--------------------------------------------------------- Start cards ---------------------------------------------> */   
+.button{
+    background-color: orange;
+    text-decoration: none;
+    /* border: 2px solid transparent; */
+    /* font-weight: bold; */
+    /* transition: 1s; */
+    color: white;
+    /* ///////////// */
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid orange;
+    /* margin-left: 200px; */
+    box-shadow: 3px 3px 3px gray;
+    margin-left: 45px;
+    font-size: 15px;
+}
+.button a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.cards-top{
+    font-size: 50px;
+    font-family: Lucida Handwriting;
+    text-align: center;
+}
+.container-head h2{
+    background: white;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+/* <--------------------------------------------------------- End cards ---------------------------------------------> */
+/* <--------------------------------------------------------- Start Rewiews ---------------------------------------------> */
+
+/* <--------------------------------------------------------- End Rewiews ---------------------------------------------> */
+/* <---------------------------------------------------- Start Footer -------------------------------------------------> */
+.links a{
+    text-decoration: none;
+}
+.contact{
+    margin-left: 16px;
+}
+
+.icons-container .icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem 3rem;
+}
+.icons-container .icons .bi{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+/* <---------------------------------------------------- End Footer -------------------------------------------------> */
+
+/* <---------------------------------------------------- Responsive -------------------------------------------------> */
+@media(max-width: 500px){
+    .heading{
+font-size: 22px;
+padding-bottom: 15px;
+/* text-align: center; */
+margin-left: 10px;
+/* padding-left: 20px; */
+    }
+    .main{
+        display: block;
+    }
+    .main img{
+        width: 300px;
+        height: 200px;
+    }
+    .about-text h2{
+        font-size: 30px;
+        margin-left: 85px;
+    }
+    .button{
+        margin-left: 85px;
+    }
+    .carousel-caption h2{
+        font-size: 10px;
+    }
+    .carousel-caption h5{
+        font-size: 10px;
+    }
+}
+@media(max-width: 900px){
+    .main{
+        display: block;
+    }
+    .about-text{
+        width: 100%;
+    }
+}
+
+
+
+
+/* meals */
+
+body , html{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+/*Gallery*/
+.second-section-gallery{
+	height: 1400px;
+    width: 90%;
+    margin-top: 4%;
+    padding-left: 2%;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    background-color: #f2f2f2;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+    box-shadow: 7px 4px 20px black;
+}
+.second-section-meals-images{
+	height: 1400px;
+    width: 90%;
+    margin-top: 4%;
+    padding-left: 2%;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    background-color: #f2f2f2;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+    box-shadow: 7px 4px 20px black;
+}
+.g-imgs {
+    margin-top: 130px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    float: left;
+    border: 2px solid #EFA52C;
+}
+
+.g-imgs:hover {
+	transition: box-shadow .4s;
+    box-shadow: 7px 4px 20px black;
+}
+
+.g-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.g-desc {
+    font-size: 34px;
+    padding: 15px;
+    text-align: center;
+    color: #EFA52C;
+    font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    text-align: center;
+}
+#cooking{
+	font-size: 20px;
+
+}
+
+
+/*meals*/
+.second-section-meals{
+	height: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #f2f2f2;
+	margin-top: 3%;
+}
+ul.tabpages{
+	list-style-type: none;
+}
+ul.tabpages li{
+	height: 90px;
+	text-align: center;
+	font-family: Lato;
+	background-color: #595959;
+	color: white;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 82px;
+    font-size: 40px;
+    cursor: pointer;
+    display: table-cell;
+    width: 1%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #FFF;
+    border-width: 0 1px 0 0;
+}
+ul.tabpages li a{
+	text-decoration: none;
+	display: inline-block;
+	height: 90px;
+	width: 100%;
+	background-color: #595959;
+}
+ul.tabpages li a:hover{
+	background-color: #333333;
+	transition: background-color .4s;
+
+}
+
+ul.tabpages li a:focus, .active {background-color: black;}
+
+.x{
+	height: auto;
+	width: 40%;
+	background-color: #f2f2f2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	background-color: #EFA52C;
+}
+.x p{
+	font-family: Lato;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    font-size: 417%;
+}
+.Tab{
+	display: none;
+}
+/*media queries*/
+
+
+
+
+/*feedback page*/
+@media(max-width: 1262px){
+
+	.second-section-meals-images{
+		height:6000px;
+	}
+.g-imgs a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.g-imgs{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+}
+@media(max-width: 1174px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+	.headingorange{
+		display: none;
+	}
+	.dishcardsone{
+		width: 25%;
+		margin-left: 37%;
+	}
+	.second-section-meals-images{
+		height:6000px;
+		margin-bottom: 5%;
+	}
+	#leftq img , #rightq img{
+		height: 20px;
+		width:20px;
+	}
+}
+@media(max-width: 1114px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+
+
+
+.second-section-gallery {
+    height: 3361px;
+}
+.g-desc {
+    padding: 3%;
+    }
+}
+@media(max-width: 1099px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+	.second-section-meals-images{
+		height:5572px;
+	}
+
+}
+@media(max-width: 1000px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+
+	.second-section-meals-images{
+		height:5247px;
+	}
+.second-section-awards{
+    height: 4865px;
+}
+
+}
+@media(max-width: 894px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+	.second-section-meals-images{
+		height:4745px;
+	}
+	ul.tabpages li{
+	display: inline;
+}
+	
+
+.second-section-gallery {
+    height: 3221px;
+}
+
+}
+@media(max-width: 772px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+	.second-section-meals-images{
+		height: 4243px;
+	}
+	
+}
+@media(max-width: 712px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+	.second-section-meals-images{
+		height: 4024px;
+	}
+
+}
+@media(max-width: 596px){
+	div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+
+
+	.second-section-meals-images{
+		height: 3719px;
+		width: 100%;
+	}
+	.x p{
+		font-size: 200%;
+	}
+	ul.tabpages li {
+    font-size: 32px;
+}
+
+}
+@media(max-width: 520px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+
+	.second-section-meals-images{
+		height:3019px;
+	}
+
+
+
+.g-imgs{
+    width: auto;
+    height: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+}
+@media(max-width: 409px){
+div[style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999"]{display:none}
+	.second-section-meals-images{
+		height: 2661px;
+	}
+
+}
+.second-section-gallery{
+height:3140px;
+}
+
+
+
